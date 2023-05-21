@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First HTML Assignement </title>
+  </head>
+  <body>
+    <h2>Welcome to my Website!</h2>
+    <img src="profile1.jpg" alt="my display profile" height="400" width="400" style="border:5px solid gray">
+     <h2 style= "color:Tomato;">Satyanshu Bhardwaj</h2>
+     <p><h3>B.Tech CSE-IOT | RKGIT'24</h3></p>
+     <p>ROBOTICIST | WEB DEVELOPER | IOT ENGINEER</p>
+     <p>I've Just Finished My First Python Game</p>
+    <p>Check this out 👇</p>
+
+    <video id = "Fighter_Game" width="560" autoplay >
+      <source src="Fighter_Game.mp4" type="video/mp4">
+ vide not supported
+    </video>
+<p>
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+  </p>
+  <p>You can get the all the required files and the <strong>Python codes</strong> on my <strong><em>Github repo:</em></strong></p>
+
+<a href="https://github.com/Satyanshu9/FighterGame"><img src="github_logo.png" width="250" alt=""></a>
+
+     <p>Connect with me here👇:</p>
+     <ul>
+       <li><a href="https://www.linkedin.com/in/satyanshu-bhardwaj-b88604242/"> <img src="linkedin_logo.png" width="25"height="25" alt="My_Linkedin">_  LinkedIn</a></li>
+       <li><a href="https://www.instagram.com/robotics_by_him/"><img src="Instagram_logo.png" width="25"height="25" alt="My Instagram">_  Instagram</a></li>
+       <li><a href="https://www.facebook.com/profile.php?id=100087070703892"><img src="facebook_logo.png"  width="25"height="25" alt="My Facebook">_  Facebook</a></li>
+     </ul>
+
+
+<script>
+  var myVideo = document.getElementById('Fighter_Game');
+  function playPause(){
+    if (myVideo.paused)
+    myVideo.play();
+    else
+      myVideo.pause();
+    }
+
+  function makeBig() {
+      myVideo.width = 1080;
+  }
+
+  function makeSmall() {
+      myVideo.width = 320;
+  }
+
+  function makeNormal() {
+      myVideo.width = 560;
+  }
+
+</script>
+
+
+
+
+  </body>
+</html>
