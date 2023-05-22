@@ -1,0 +1,28 @@
+h2
+{
+  color: red;
+  font-family: "Arial";
+}
+
+p{
+  font-family: 'Indie Flower', cursive;
+  font-style: italic;
+
+}
+
+body{
+  font-size: 20px;
+}
+#two
+{
+font-family: 'Bebas Neue', sans-serif;;
+  font-size: 1.4em;
+}
+h2
+{
+  text-align: center;
+}
+/*
+1em = 15px
+2em = 32px
+*/
