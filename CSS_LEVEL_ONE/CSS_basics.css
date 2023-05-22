@@ -1,0 +1,19 @@
+body{
+  background: image(spiderman1.png);
+}
+
+div{
+  background-color: cyan;
+  border-color: red;
+  border-width: medium;
+  border-style: dashed;
+}
+
+p{
+  color: brown;
+}
+
+span{
+  background: red;
+  color: black;
+}

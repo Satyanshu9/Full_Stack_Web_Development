@@ -1,0 +1,33 @@
+
+
+/*. for classes */
+
+.firstDiv{
+  color:blue;
+}
+.secondDiv{
+  color: red;
+}
+
+/* # of ids */
+
+#singledout{
+  color: cyan;
+  text-decoration:overline;
+}
+
+
+/* varous css selectors */
+h3 + ul{
+  border: 3px dotted purple;
+}
+
+li a {
+  color: red;
+}
+
+li a[href='www.instagram.com']
+{
+  color: brown;
+  border: 2px solid orange;
+}

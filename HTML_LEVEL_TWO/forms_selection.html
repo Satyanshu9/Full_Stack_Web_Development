@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback</title>
+  </head>
+  <body>
+    <h2>Hotel Feedback form!</h2>
+    <form method="get">
+      <h3>Are you from India or a Foreigner</h3>
+      <label for="citizen">Indian:</label>
+      <input id ="citizen" type="radio" name="location" value="citizen">
+      <label for="outsider">Foreigner:</label>
+      <input id = "outsider"type="radio" name="location" value="outsider">
+
+      <h3>How was your Service?</h3>
+      <select name="stars">
+        <option value="3">Great</option>
+        <option value="2">Okay</option>
+        <option value="1">Bad</option>
+      </select>
+      <br>
+      <h3>Any other Feedback?</h3>
+      <textarea name="mytexyt" rows="8" cols="80"></textarea>
+      <br>
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>
