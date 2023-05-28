@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELECTRAZZ Society - Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .landing-page {
+      position: relative;
+      height: 100vh;
+      background: url('path/to/image1.jpg') center center/cover no-repeat;
+      animation: slideshow 10s infinite;
+    }
+
+    @keyframes slideshow {
+      0% { background-image: url('path/to/image1.jpg'); }
+      33.3% { background-image: url('path/to/image2.jpg'); }
+      66.6% { background-image: url('path/to/image3.jpg'); }
+      100% { background-image: url('path/to/image4.jpg'); }
+    }
+
+    .landing-page-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffffff;
+      z-index: 2;
+    }
+
+    .landing-page-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .landing-page-content p {
+      font-size: 18px;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin-bottom: 0;
+    }
+
+    .footer .social-links {
+      margin-top: 10px;
+    }
+
+    .footer .social-links a {
+      margin-right: 20px;
+      color: #000000;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .footer .social-links a i {
+
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="landing-page-content">
+      <h1>Welcome to ELECTRAZZ Society</h1>
+      <p>Empowering the Future of Technology</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Greetings from ELECTRAZZ Society</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/electrazz.society/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.instagram.com/electrazz_rkgit/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://chat.whatsapp.com/FWqVXwqoL269Q0XMhH9AbO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/company/electrazz-rkgit/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>

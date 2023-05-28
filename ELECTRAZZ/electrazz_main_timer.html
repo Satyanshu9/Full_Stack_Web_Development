@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Dropdown and Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Existing styles */
+    .landing-page {
+      position: relative;
+      background: url('landing_page_cover1.jpg') no-repeat center center/cover;
+      animation: slideshow 10s infinite;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    @keyframes slideshow {
+      0% { background-image: url('IMG_5474.jpg'); }
+      33.3% { background-image: url('landing_page_cover1.jpg'); }
+      66.6% { background-image: url('IMG_5480.jpg'); }
+      100% { background-image: url('IMG_5494.jpg'); }
+    }
+
+    .landing-page-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .vision-mission {
+
+      padding: 50px 0;
+      background-color: #faedcd;
+      text-align: center;
+    }
+
+
+
+    .featured-events {
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .featured-event {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .event-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+#hatp {
+border-radius: 20px;
+display: block;
+}
+#rsp {
+border-radius: 20px;
+display: block;
+}
+#hatp2 {
+border-radius: 20px;
+display: block;
+}
+
+#featurede{
+  font-family: Consolas;
+}
+
+.footer {
+background-color: #f6bd60;
+<!-- background-color: rgba(0, 0, 0, 0.5); -->
+padding: 20px;
+text-align: center;
+}
+
+.footer p {
+margin-bottom: 20px;
+}
+
+.footer .social-links {
+margin-top: 10px;
+}
+
+.footer .social-links a {
+margin-right: 20px;
+color: #000000;
+display: inline-flex;
+align-items: center;
+text-decoration: none;
+}
+
+.footer .social-links a i {
+background-color: red;
+margin-right: 5px;
+}
+
+
+
+
+    /* New styles */
+    .carousel-item {
+      height: 800px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .event-date {
+      background-color: #f6bd60;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #f6bd60;
+      margin-bottom: 30px;
+    }
+
+    .counter span {
+      margin: 0 10px;
+    }
+
+    @keyframes slideshow {
+      0% { background-image: url('IMG_5474.jpg'); }
+      33.3% { background-image: url('landing_page_cover1.jpg'); }
+      66.6% { background-image: url('IMG_5480.jpg'); }
+      100% { background-image: url('IMG_5494.jpg'); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navigation bar starts here -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+      <a class="navbar-brand" href="#">
+        <img src="logo_electrazz.png" width="50" class="d-inline-block align-top" alt="">
+          ELECTRAZZ Society</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Workshops</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Robo Soccer 2023</a>
+              <a class="dropdown-item" href="#">Hoist Albatross 2022</a>
+              <a class="dropdown-item" href="#">Hoist Albatross 2021</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Past Events</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+
+
+
+        <!-- Search button and field -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- navigation bar ends here -->
+
+
+
+  <!-- Landing image -->
+  <div class="landing-page">
+      <div class="landing-page-overlay">
+        <br>
+        <br>
+        <br>
+        <h1 >Welcome to ELECTRAZZ Society</h1>
+        <p>Empowering the Future of Technology</p>
+
+
+      </div>
+    </div>
+
+  <!-- Vision and mission here -->
+
+
+
+  <div class="vision-mission">
+    <div class="container">
+      <h2>Vision</h2>
+      <p>Our vision is to revolutionize the world through IoT and automation, driving innovation and creating a smarter future.</p>
+      <h2>Mission</h2>
+      <p>Our mission is to provide college students with hands-on learning opportunities, workshops, and events that foster their skills and knowledge in emerging technologies.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Vision and mission ends here -->
+
+  <!-- Featured events -->
+  <div class="featured-events">
+    <div class="container">
+
+      <h1 id="featurede">Featured Events</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="featured-event">
+            <img id="rsp" src="ro.jpg" alt="Robo Soccer" class="event-image">
+            <div>
+              <h3>Robo Soccer</h3>
+              <h3>2023</h3>
+              <p>A robotics competition where autonomous robots battle it out on a soccer field.</p>
+              <span class="event-date">June 10-12, 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="featured-event">
+            <img id="hatp" src="hoist_albatross_2.jpg" alt="Hoist Albatross 2.0" class="event-image">
+            <div>
+              <h3>Hoist Albatross 2.0</h3>
+              <h3>2022</h3>
+              <p>An advanced drone design competition to test your engineering skills.</p>
+              <span class="event-date">March 15-17, 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="featured-event">
+            <img id="hatp2" src="hoist_albatrossp.png" alt="Hoist Albatross" class="event-image">
+            <div>
+              <h3>Hoist Albatross</h3>
+              <h3>2021</h3>
+              <p>A workshop on building drones for aerial photography and surveillance.</p>
+              <span class="event-date">September 5-7, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Counter section -->
+  <div class="counter">
+    <span>Days: <span id="days">0</span></span>
+    <span>Hours: <span id="hours">0</span></span>
+    <span>Minutes: <span id="minutes">0</span></span>
+    <span>Seconds: <span id="seconds">0</span></span>
+  </div>
+
+  <!-- footer starts here -->
+  <footer class="footer">
+    <p>Greetings from ELECTRAZZ Society</p>
+    <p>Connect with us:</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/electrazz.society/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.instagram.com/electrazz_rkgit/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://chat.whatsapp.com/FWqVXwqoL269Q0XMhH9AbO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/company/electrazz-rkgit/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+
+
+
+  <!-- foooter ends here -->
+
+  <!-- JavaScript code for counter -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script>
+    // Countdown timer
+    const countdownDate = new Date("June 10, 2023 00:00:00").getTime();
+
+    function updateCounter() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }
+
+    setInterval(updateCounter, 1000);
+  </script>
+
+</body>
+
+</html>
